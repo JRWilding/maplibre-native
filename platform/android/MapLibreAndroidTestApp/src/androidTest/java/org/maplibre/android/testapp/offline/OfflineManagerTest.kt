@@ -114,7 +114,7 @@ class OfflineManagerTest : AppCenter() {
 
         // Invalidate region
 
-        val latch4 = CountDownLatch(1)
+        val latch4 = CountDownLatch(3)
         rule.activity.runOnUiThread {
             mergedRegion.invalidate(object : OfflineRegion.OfflineRegionInvalidateCallback {
                 override fun onInvalidate() {
